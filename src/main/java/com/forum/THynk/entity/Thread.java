@@ -28,10 +28,10 @@ public class Thread {
     private Integer viewCount = 0;
 
     @Column(name = "is_locked")
-    private boolean isLocked = false;
+    private Boolean isLocked = false;
 
     @Column(name = "is_pinned")
-    private boolean isPinned = false;
+    private Boolean isPinned = false;
 
     // Quan hệ
     @ManyToOne(fetch = FetchType.LAZY)
