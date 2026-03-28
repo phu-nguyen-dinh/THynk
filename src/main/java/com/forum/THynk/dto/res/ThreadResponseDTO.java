@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class ThreadResponseDTO {
-    private Long id;
+    private Long threadId;
     private String title;
     private Long categoryId;
     private String categoryName;
