@@ -2,11 +2,14 @@ package com.forum.THynk.mapper;
 
 import java.time.LocalDateTime;
 
+import org.springframework.stereotype.Component;
+
 import com.forum.THynk.dto.req.UserRequestDTO;
 import com.forum.THynk.dto.res.UserResponseDTO;
 import com.forum.THynk.entity.User;
 import com.forum.THynk.enums.Role;
 
+@Component
 public class UserMapper {
     public User toEntity(UserRequestDTO dto) {
         if(dto == null) {
