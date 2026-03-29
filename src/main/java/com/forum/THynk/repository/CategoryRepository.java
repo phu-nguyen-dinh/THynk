@@ -10,7 +10,10 @@ import com.forum.THynk.entity.Category;
 
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Long> {
+    // Danh sách category cha
     List<Category> findByParentIdIsNullOrderByNameAsc();
+
+    // Danh sách category con theo category cha
     List<Category> findByParentIdOrderByOrderAsc(Long parentId);
     
     // Tìm tất cả category theo thứ tự
